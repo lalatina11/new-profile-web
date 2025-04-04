@@ -11,6 +11,23 @@
     @apply m-0 p-0 box-border antialiased scroll-smooth;
 }
 
+body{
+    @apply min-h-screen;
+}
+main{
+    @apply lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px] max-w-[640px] md:max-w-[768px] mx-auto;
+    margin-right: auto;    
+    margin-left: auto;
+}
+
+html{
+scroll-snap-type: y mandatory; 
+}
+
+section{
+    @apply h-[75vh] snap-center;
+}
+
 :root {
     --radius: 0.625rem;
     --background: oklch(1 0 0);
